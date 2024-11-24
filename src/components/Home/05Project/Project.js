@@ -19,38 +19,42 @@ const cardData = [
   {
     title: "Online Puja",
     description:
-      "Seamlessly integrate with HRMS for synchronized attendance data, optimizing workforce management and enhancing overall operational efficiency. Seamlessly integrate with HRMS for synchronized attendance data, optimizing workforce management and enhancing overall operational efficiency.",
+      "The Online Puja Booking and Streaming Platform stands as a testament to our commitment to innovation, user experience, and market alignment. By combining cutting-edge technology with user-centered design, we have created a platform that not only meets the needs of the users but also sets a new standard in online religious services.",
     points: [
-      "Streamlined Workforce Management",
-      "Real-Time Attendance Tracking",
-      "Enhanced Operational Efficiency",
+      "Enhanced Accessibility",
+      "Increased User Engagement",
+      "Improved Booking Efficiency",
+      "Positive User Feedback",
     ],
     image: "Home/puja1.png", // Replace with actual image path
     icon: "/path-to-your-icon/hrms-icon.png", // Replace with actual icon path
+    path: "https://www.iskconpuja.com/",
   },
   {
     title: "GTIC",
     description:
-      "Unlock seamless distribution and real-time inventory oversight with our advanced warehouse solution, automating your supply chain for rapid operations, optimal stock levels, and cost-effective storage.",
+      "Developed an intuitive and dynamic website for GTIC, focused on event marketing. The platform showcases event details, schedules, and speaker information, all managed seamlessly through a robust backend system. Designed to provide an engaging user experience while ensuring efficient content management for administrators.",
     points: [
-      "Real-Time Inventory",
-      "Optimized Stock Levels",
-      "Cost-Effective Storage",
+      "Token Security Verification",
+      "Day Representing Tabs",
+      "Speaker Management ",
     ],
     image: "Home/gtic2.png", // Replace with actual image path
     icon: "/path-to-your-icon/inventory-warehouse-icon.png", // Replace with actual icon path
+    path: "https://gitc-ui.vercel.app",
   },
   {
     title: "ISKCON jaipur",
     description:
-      "Integrate with ERP to streamline business processes, boost productivity, and ensure efficient resource management.",
+      "Developed a comprehensive and visually captivating website for ISKCON Jaipur to enhance its social media presence and provide an informative guide to the temple's activities. The website was meticulously crafted from scratch using an extremely customized template to ensure a unique and engaging user experience.",
     points: [
-      "Efficient Resource Management",
-      "Boosted Productivity",
-      "Streamlined Business Processes",
+      "Community Engagement",
+      "E-commerce Integration ",
+      "Comprehensive Services ",
     ],
     image: "Home/jai1.png", // Replace with actual image path
     icon: "/path-to-your-icon/erp-icon.png", // Replace with actual icon path
+    path: "https://www.iskconjaipur.com/",
   },
 ];
 
@@ -84,12 +88,20 @@ const Deities = () => {
 
   return (
     <div className="bg-[#d17a2942]">
-     <div className="md:mx-40 mx-2">
-     <h1 className={` ${pop.className} pt-16 pb-2 xl:px-12 px-5 text-center text-transparent text-[24px] md:text-[48px] bg-clip-text bg-gradient-to-r from-[#2980d1] to-black font-bold`}>
-        Our Solutions
-      </h1>
-      <p className={`${pop.className} text-center mb-5 text-[14px] md:text-[20px]`}>Whether you are a startup, midsize or an enterprise-grade company, our bespoke software solutions are developed to streamline your business operations and fuel your growth.</p>
-     </div>
+      <div className="md:mx-40 mx-2">
+        <h1
+          className={` ${pop.className} pt-16 pb-2 xl:px-12 px-5 text-center text-transparent text-[24px] md:text-[48px] bg-clip-text bg-gradient-to-r from-[#2980d1] to-black font-bold`}
+        >
+          Our Solutions
+        </h1>
+        <p
+          className={`${pop.className} text-center mb-5 text-[14px] md:text-[20px]`}
+        >
+          Whether you are a startup, midsize or an enterprise-grade company, our
+          bespoke software solutions are developed to streamline your business
+          operations and fuel your growth.
+        </p>
+      </div>
       <div className="overflow-hidden pb-10">
         <div className="flex flex-col md:flex-row xl:flex-nowrap justify-center items-center xl:h-[550px] mb-5 gap-5 md:gap-0">
           {cardData.map((data, index) => {
@@ -116,7 +128,7 @@ const Deities = () => {
                 ref={ref} // Attach ref to each card
               >
                 {/* Transparent black overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-75 z-10"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-70 z-10"></div>
                 {/* Conditionally render titles, descriptions, and points */}
                 {isMdScreen && hoveredIndex === index ? (
                   <div className="relative z-20 text-white font-bold text-center md:text-3xl text-lg p-5">
@@ -178,25 +190,27 @@ const Deities = () => {
                           animate={inView ? { opacity: 1, y: 0 } : {}}
                           transition={{ duration: 0.5, delay: 0.6 }}
                         >
-                          <button
-                            className={`bg-blue-500 text-[20px] text-white px-4 py-2 rounded-lg flex items-center justify-center hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105 ${pop.className}`}
-                          >
-                            View More
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              strokeWidth="2"
-                              stroke="currentColor"
-                              className="ml-2 w-5 h-5"
+                          <a href={data.path}>
+                            <button
+                              className={`bg-blue-500 text-[20px] text-white px-4 py-2 rounded-lg flex items-center justify-center hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105 ${pop.className}`}
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M9 5l7 7-7 7"
-                              />
-                            </svg>
-                          </button>
+                              View More
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth="2"
+                                stroke="currentColor"
+                                className="ml-2 w-5 h-5"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M9 5l7 7-7 7"
+                                />
+                              </svg>
+                            </button>
+                          </a>
                         </motion.div>
                       </div>
                       {/* Right Bottom Logo */}

@@ -12,15 +12,14 @@ const Hero = () => {
     <div className="relative  h-[650px] overflow-hidden">
       {/* Background Video */}
       <video
-        src="/Home/home-video-new.mp4"
+        src="/Home/home-video.mp4"
         className="z-0 object-cover h-screen w-full absolute top-0 left-0"
         autoPlay
         loop
         muted
       />
-
       {/* Overlay Content */}
-      <div className="relative bg-black/50 z-10 h-[650px] flex flex-col justify-center items-center text-center px-4">
+      <div className="relative bg-black/80 z-10 h-[650px] flex flex-col justify-center items-center text-center px-4">
         <div className="text-white">
           <motion.span
             className="font-bold sm:text-lg text-sm"

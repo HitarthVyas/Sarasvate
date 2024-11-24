@@ -34,7 +34,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="relative w-full flex justify-center items-center h-[500px]">
+    <div id="home-portpholio" className="relative w-full flex justify-center items-center h-[500px]">
       {/* Left Arrow */}
       <button
         className="absolute left-4 bg-white text-blue-500 p-2 rounded-full shadow-lg z-10"

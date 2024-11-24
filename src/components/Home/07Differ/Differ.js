@@ -20,7 +20,7 @@ const cardData = [
     title: "Expert Team",
     image: "/Home/indus/expert.webp",
     description:
-      "Building innovative solutions for businesses belonging to food and restaurants that can help them scale up.",
+      "A dynamic group of skilled professionals driven by creativity and expertise. Our team collaborates seamlessly to craft innovative, impactful solutions tailored to your needs.",
     gradient: "from-[#0017ff]/90 to-[#186980]/30",
   },
   {
@@ -28,7 +28,7 @@ const cardData = [
     title: "Innovative Technologies",
     image: "/Home/indus/technolo.webp",
     description:
-      "Building innovative solutions for businesses belonging to food and restaurants that can help them scale up.",
+      "Harnessing cutting-edge advancements like AI, blockchain, and IoT, we build future-ready solutions that boost efficiency and scalability.",
     gradient: "from-[#0a0f24]/90 via-[#1e3a72]/80 to-[#8b34a8]/70",
   },
   {
@@ -36,7 +36,7 @@ const cardData = [
     title: "Client-Centric Approach",
     image: "/Home/indus/approch.webp",
     description:
-      "Building innovative solutions for businesses belonging to food and restaurants that can help them scale up.",
+      "Your goals guide our process. We ensure seamless communication, personalized solutions, and an experience designed to exceed expectations.",
     gradient: "from-[#ff0099]/90 via-[#6600ff]/70 to-[#001f4d]/60",
   },
   {
@@ -44,21 +44,19 @@ const cardData = [
     title: "Robust Security Protocols",
     image: "/Home/indus/sec.webp",
     description:
-      "Building innovative solutions for businesses belonging to food and restaurants that can help them scale up.",
+      "Advanced security measures safeguard your data with encryption, threat detection, and proactive defenses against evolving risks.",
     gradient: "from-[#ff007f]/80 via-[#b300b3]/70 to-[#003366]/80",
   },
 ];
 
 const Differ = () => {
   return (
-    <div className="container mx-auto px-4">
-      
+    <div className="container mx-auto px-4 my-20">
      <h1 className={` ${pop.className}  pb-2 xl:px-12 px-5 text-center text-transparent text-[24px] md:text-[48px] bg-clip-text bg-gradient-to-r from-[#2980d1] to-black font-bold`}>
        How We Differ
       </h1>
-      <p className={`${pop.className} text-center mb-5 text-[14px] md:text-[20px]`}>Whether you are a startup, midsize or an enterprise-grade company, our bespoke software solutions are developed to streamline your business operations and fuel your growth.</p>
-
-
+      <p className={`${pop.className} text-center mb-5 text-[14px] md:text-[20px]`}>Highlight your unique selling propositions to differentiate your company from competitors.
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {cardData.map((card) => (
           <motion.div
@@ -110,7 +108,7 @@ const Differ = () => {
 
               {/* Description */}
               <p
-                className={`text-[16px] leading-relaxed mb-8 ${mons.className}`}
+                className={`text-[16px] leading-relaxed mb-8 ${mons.className} text-justify`}
                 style={{
                   textShadow: "3px 3px 15px rgba(0, 0, 0, 1)", // Enhanced shadow for more visibility
                 }}

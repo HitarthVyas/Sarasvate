@@ -14,13 +14,13 @@ const quick1 = Quicksand({
 
 const SDLC = () => {
   return (
-    <div className="bg-gray-50 py-12">
+    <div id="home-sdlc" className="bg-gray-50 py-12">
       {/* Section Header */}
       <div className="text-center mb-5">
         <h2
           className={`text-xl md:text-3xl font-bold text-[#0e47c0] ${quick.className}`}
         >
-          Our Process
+          Our Process 
         </h2>
       </div>
       <div className={`text-center px-2 sm:px-20 pb-10 ${quick1.className}`}>
@@ -44,26 +44,6 @@ const SDLC = () => {
             Gathering business requirements and identifying customer needs to
             outline the project goals and objectives.
           </p>
-          <a
-            href="/testing"
-            className="flex items-center text-blue-500 hover:text-blue-700 mt-2 transition duration-300 ease-in-out"
-          >
-            <span>Read more</span>
-            <svg
-              className="w-4 h-4 ml-2 transform transition-transform duration-300 ease-in-out hover:translate-x-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
         </div>
 
         {/* Step 2 - Design */}
@@ -76,26 +56,6 @@ const SDLC = () => {
             Creating wireframes, mockups, and system architecture to ensure
             smooth user experience and visual appeal.
           </p>
-          <a
-            href="/testing"
-            className="flex items-center text-blue-500 hover:text-blue-700 mt-2 transition duration-300 ease-in-out"
-          >
-            <span>Read more</span>
-            <svg
-              className="w-4 h-4 ml-2 transform transition-transform duration-300 ease-in-out hover:translate-x-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
         </div>
 
         {/* Step 3 - Development */}
@@ -108,26 +68,6 @@ const SDLC = () => {
             Writing code and building features based on design and requirements,
             ensuring functionality.
           </p>
-          <a
-            href="/testing"
-            className="flex items-center text-blue-500 hover:text-blue-700 mt-2 transition duration-300 ease-in-out"
-          >
-            <span>Read more</span>
-            <svg
-              className="w-4 h-4 ml-2 transform transition-transform duration-300 ease-in-out hover:translate-x-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
         </div>
 
         {/* Step 4 - Testing */}
@@ -140,26 +80,6 @@ const SDLC = () => {
             Running multiple tests to ensure the product is bug-free, secure,
             and performs optimally.
           </p>
-          <a
-            href="/testing"
-            className="flex items-center text-blue-500 hover:text-blue-700 mt-2 transition duration-300 ease-in-out"
-          >
-            <span>Read more</span>
-            <svg
-              className="w-4 h-4 ml-2 transform transition-transform duration-300 ease-in-out hover:translate-x-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
         </div>
 
         {/* Step 5 - Deployment */}
@@ -172,26 +92,6 @@ const SDLC = () => {
             Launching the final product in the production environment, ready for
             users.
           </p>
-          <a
-            href="/testing"
-            className="flex items-center text-blue-500 hover:text-blue-700 mt-2 transition duration-300 ease-in-out"
-          >
-            <span>Read more</span>
-            <svg
-              className="w-4 h-4 ml-2 transform transition-transform duration-300 ease-in-out hover:translate-x-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
         </div>
 
         {/* Step 6 - Maintenance */}
@@ -204,26 +104,6 @@ const SDLC = () => {
             Providing continuous support and updates to ensure smooth
             performance.
           </p>
-          <a
-            href="/testing"
-            className="flex items-center text-blue-500 hover:text-blue-700 mt-2 transition duration-300 ease-in-out"
-          >
-            <span>Read more</span>
-            <svg
-              className="w-4 h-4 ml-2 transform transition-transform duration-300 ease-in-out hover:translate-x-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </div>

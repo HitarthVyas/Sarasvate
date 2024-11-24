@@ -18,56 +18,56 @@ const industriesData = [
     title: "Real Estate and Construction",
     image: "/Home/indus/real.webp",
     description:
-      "Transform your real estate dreams into reality with cutting-edge designs and exceptional construction expertise. Build your future with spaces crafted to perfection.",
+      "Turn your aspirations in real estate into reality by top-level architects and builders. Create the future in perfectly tailored spaces.",
   },
   {
     id: 2,
     title: "Education",
     image: "/Home/indus/edu.webp",
     description:
-      "Shape the future with innovative educational solutions that inspire learning and growth. Empower your institution with cutting-edge technologies and interactive experiences.",
+      "Innovative approaches to education that inspire learning and shape the future are the ones we want to implement. Give your institution the latest technology and a wide range of interactive activities.",
   },
   {
     id: 3,
     title: "Retail & Ecommerce",
     image: "/Home/indus/retail.webp",
     description:
-      "Revolutionize your business with smart retail solutions and seamless eCommerce platforms designed to captivate customers and drive sales growth like never before.",
+      "Transform your business with innovative retail solutions and smooth eCommerce channels that have the ability to engage customers and enhance sales like never before.",
   },
   {
     id: 4,
     title: "Travel",
     image: "/Home/indus/hos.webp",
     description:
-      "Unlock the world of luxury travel with innovative solutions designed for seamless journeys. Elevate your services and redefine the travel experience for your customers.",
+      "Now you can enjoy luxury travel with new solutions that promise simplicity in travel. Enhance your services and transform how your clients experience travel.",
   },
   {
     id: 5,
     title: "Industrial Sector",
     image: "/Home/indus/menufac.webp",
     description:
-      "Enhance your industrial operations with state-of-the-art solutions engineered for efficiency and scalability. Maximize production and transform your industrial vision into reality.",
+      "Develop your industrial activities using advanced solutions which are designed to be efficient and scalable. Increase production capabilities and make your industrial dream a tangible concept.",
   },
   {
     id: 6,
     title: "Healthcare",
     image: "/Home/indus/hospital.webp",
     description:
-      "Deliver exceptional healthcare services with innovative technologies that redefine patient care. Ensure superior outcomes with modern, reliable, and secure healthcare solutions.",
+      "Utilize advanced healthcare solutions that are both modern and reliable in order to deliver top-quality outcomes. Continuous technological innovation that enhances healthcare service delivery is the ultimate goal.",
   },
   {
     id: 7,
     title: "Technology Services",
     image: "/Home/indus/tech(2).webp",
     description:
-      "Stay ahead of the curve with cutting-edge technology services that empower your business. From IT solutions to cloud computing, we make the digital transformation seamless and impactful.",
+      "Embrace technology services that are at the forefront and will ensure growth for your business. We make it seamless as well as effective when it comes to the digital transformation whether it is IT services or cloud computing.",
   },
   {
     id: 8,
     title: "Professional Services",
     image: "/Home/indus/pro.webp",
     description:
-      "Boost your business with tailored professional services designed to drive success. Experience strategic solutions that deliver measurable results and elevate your enterprise.",
+      "From management consulting to social media marketing, let us help you achieve any business goal through our specialized expert services. First of all, we help you formulate a plan, approve marketing strategies, and generate profits.",
   },
 ];
 
@@ -84,7 +84,7 @@ const Industries = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200 px-4 py-10">
+    <div id="home-industries" className="min-h-screen bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200 px-4 py-10 my-20">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           <motion.h2
@@ -101,8 +101,7 @@ const Industries = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            We specialize in providing customized solutions for your residential
-            needs.
+            Highlight the key industries you specialize in to show your expertise across sectors.
           </motion.p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
