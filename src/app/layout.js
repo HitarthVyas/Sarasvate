@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/utilities/Header/Header";
-import QuoteFormLoader from "./QuoteFormLoader"; // Import the new component
 import FooterPage from "@/components/utilities/Footer/FooterPage";
 
 const geistSans = localFont({
@@ -28,7 +27,6 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
-        <QuoteFormLoader /> {/* Use the new loader component */}
         <FooterPage />
       </body>
     </html>
